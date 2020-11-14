@@ -14,7 +14,7 @@ return itemRef
 })
 
 const ItemsList = ingredients.map(item => createItems(item) )
-console.log(ItemsList);
+
 const listRef = document.querySelector('#ingredients')
 console.log(listRef);
 
