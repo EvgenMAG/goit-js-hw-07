@@ -16,20 +16,21 @@ const inputRef = document.querySelector('[type="number"]')
 const createBtn = document.querySelector('[data-action="render"]')
 const removeBtn = document.querySelector('[data-action="destroy"]')
 const divRef = document.querySelector('#boxes')
-divRef.style.display = 'flex'
-divRef.style.flexWrap = 'wrap'
-divRef.style.alignItems = 'center'
+// divRef.style.display = 'block'
+// divRef.style.flexWrap = 'wrap'
+// divRef.style.alignItems = 'center'
 divRef.style.paddingBottom = '150px'
 
 
 
 let amount = Number(inputRef.value)
-console.log(amount);
 
 
 inputRef.addEventListener('input', () => {
-    console.log('Hello')
     amount = Number(inputRef.value)
+    // divRef.innerHTML =""
+})
+inputRef.addEventListener('click', () => {
     divRef.innerHTML =""
 })
 
@@ -43,7 +44,8 @@ function createBoxes(a) {
         divChild.classList.add('divList')
         divChild.style.backgroundColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6)
         divChild.style.marginTop = '10px'
-        divChild.style.marginLeft = x + 'px'
+        divChild.style.marginRight = 'auto'
+        divChild.style.marginLeft = 'auto'
         divChild.style.width = x +'px'
         divChild.style.height = x +'px'
         divRef.append(divChild)

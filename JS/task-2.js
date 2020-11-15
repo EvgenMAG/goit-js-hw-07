@@ -16,6 +16,5 @@ return itemRef
 const ItemsList = ingredients.map(item => createItems(item) )
 
 const listRef = document.querySelector('#ingredients')
-console.log(listRef);
 
 listRef.append(...ItemsList)

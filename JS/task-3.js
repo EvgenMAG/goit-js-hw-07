@@ -19,10 +19,9 @@ const images = [
 
 const listRef = document.querySelector('#gallery')
 listRef.classList.add('navStyle')
-console.log(listRef);
 
-const creteElement = (image) => {
-  listRef.insertAdjacentHTML('afterbegin', `<li class="itemGallery"><img class = "mainImage" src=${image.url} alt=${image.alt} width="300" height="150"></li>`)
+const creteElement = ({url,alt}) => {
+  listRef.insertAdjacentHTML('afterbegin', `<li class="itemGallery"><img class = "mainImage" src=${url} alt=${alt} width="300" height="150"></li>`)
   
  return creteElement
 }
