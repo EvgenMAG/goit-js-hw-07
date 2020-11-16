@@ -5,8 +5,7 @@ const nameLableRef = document.querySelector('#name-output')
 inputRef.addEventListener('input', handleInputChange)
 
 function handleInputChange(event) {
-    event.target.value != "" ? nameLableRef.textContent = event.target.value : nameLableRef.textContent = "незнакомец"; 
-
+    nameLableRef.textContent = event.target.value != "" ? event.target.value :  "незнакомец"; 
 }
 
 
