@@ -13,8 +13,8 @@ itemRef.textContent = ingredient
 return itemRef
 })
 
-const ItemsList = ingredients.map(item => createItems(item) )
+const itemsList = ingredients.map(item => createItems(item) )
 
 const listRef = document.querySelector('#ingredients')
 
-listRef.append(...ItemsList)
+listRef.append(...itemsList)
