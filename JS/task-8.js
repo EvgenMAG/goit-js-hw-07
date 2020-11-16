@@ -16,9 +16,7 @@ const inputRef = document.querySelector('[type="number"]')
 const createBtn = document.querySelector('[data-action="render"]')
 const removeBtn = document.querySelector('[data-action="destroy"]')
 const divRef = document.querySelector('#boxes')
-// divRef.style.display = 'block'
-// divRef.style.flexWrap = 'wrap'
-// divRef.style.alignItems = 'center'
+
 divRef.style.paddingBottom = '150px'
 
 
