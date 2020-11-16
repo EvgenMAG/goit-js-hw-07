@@ -21,7 +21,6 @@ function createBoxes(a) {
     for (let i = 1; i <= a; i++){
         x += 10
         const divChild = document.createElement('div')
-        console.log(divChild);
         divChild.classList.add('divList')
         divChild.style.backgroundColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6)
         divChild.style.marginTop = '10px'
