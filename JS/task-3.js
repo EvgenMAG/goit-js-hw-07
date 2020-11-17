@@ -18,7 +18,7 @@ const images = [
 ];
 
 const listRef = document.querySelector('#gallery')
-listRef.classList.add('navStyle')
+// listRef.classList.add('navStyle')
 
 const itemsList = images.map(({url,alt}) => listRef.insertAdjacentHTML('afterbegin', `<li class="itemGallery"><img class = "mainImage" src=${url} alt=${alt} width="300" height="150"></li>`))
 
